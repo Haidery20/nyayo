@@ -54,14 +54,15 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {['programs', 'about', 'impact', 'contact'].map((path) => (
+            {['home', 'about', 'program', 'impact', 'contact'].map((path) => (
               <Link 
                 key={path}
                 href={`/${path}`} 
                 className="text-white hover:text-[#2F4160] transition-colors"
               >
-                {path === 'programs' ? 'Our Programs' : 
-                 path === 'about' ? 'About Us' :
+                {path === 'Home' ? 'Home' :
+                path === 'about' ? 'About Us' :
+                path === 'programs' ? 'Our Programs' : 
                  path === 'impact' ? 'Our Impact' : 'Contact'}
               </Link>
             ))}
