@@ -199,51 +199,6 @@ export function Hero({ content }: HeroProps) {
           </div>
         </div>
       </section>
-
-      {/* Partners Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#B790CF] text-center mb-12">Our Partners</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="/images/partners/partner1.png"
-                alt="Partner 1"
-                width={200}
-                height={80}
-                className="object-contain"
-              />
-            </div>
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="/images/partners/partner2.png"
-                alt="Partner 2"
-                width={200}
-                height={80}
-                className="object-contain"
-              />
-            </div>
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="/images/partners/partner3.png"
-                alt="Partner 3"
-                width={200}
-                height={80}
-                className="object-contain"
-              />
-            </div>
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="/images/partners/partner4.png"
-                alt="Partner 4"
-                width={200}
-                height={80}
-                className="object-contain"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
