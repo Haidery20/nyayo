@@ -153,7 +153,7 @@ export default function AdminDashboard() {
               <button
                 onClick={() => setActiveTab('content')}
                 className={`flex items-center px-4 py-2 rounded-lg ${
-                  activeTab === 'content' ? 'bg-white/20 text-white' : 'text-white/80 hover:bg-white/10'
+                  activeTab === 'content' ? 'bg-[#B790CF] text-white' : 'text-gray-700 hover:bg-[#B790CF]/10'
                 }`}
               >
                 <IconEdit className="mr-2" size={20} />
@@ -162,7 +162,7 @@ export default function AdminDashboard() {
               <button
                 onClick={() => setActiveTab('users')}
                 className={`flex items-center px-4 py-2 rounded-lg ${
-                  activeTab === 'users' ? 'bg-white/20 text-white' : 'text-white/80 hover:bg-white/10'
+                  activeTab === 'users' ? 'bg-[#B790CF] text-white' : 'text-gray-700 hover:bg-[#B790CF]/10'
                 }`}
               >
                 <IconUsers className="mr-2" size={20} />
@@ -171,7 +171,7 @@ export default function AdminDashboard() {
               <button
                 onClick={() => setActiveTab('settings')}
                 className={`flex items-center px-4 py-2 rounded-lg ${
-                  activeTab === 'settings' ? 'bg-white/20 text-white' : 'text-white/80 hover:bg-white/10'
+                  activeTab === 'settings' ? 'bg-[#B790CF] text-white' : 'text-gray-700 hover:bg-[#B790CF]/10'
                 }`}
               >
                 <IconSettings className="mr-2" size={20} />
@@ -202,7 +202,7 @@ export default function AdminDashboard() {
           {activeTab === 'content' && (
             <>
               <div className="flex justify-between items-center mb-8">
-                <h1 className="text-3xl font-bold text-white">Content Management</h1>
+                <h1 className="text-3xl font-bold text-gray-800">Content Management</h1>
                 <button
                   onClick={() => setIsAddingContent(true)}
                   className="bg-[#B790CF] hover:bg-[#9A7AAD] text-white px-4 py-2 rounded-lg flex items-center"
@@ -213,31 +213,31 @@ export default function AdminDashboard() {
               </div>
 
               {isAddingContent && (
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8">
-                  <h2 className="text-2xl font-bold text-white mb-6">Add New Content</h2>
+                <div className="bg-gray-100 rounded-2xl p-8 mb-8">
+                  <h2 className="text-2xl font-bold text-gray-800 mb-6">Add New Content</h2>
                   <form onSubmit={handleAddContent} className="space-y-6">
                     <div>
-                      <label className="block text-white mb-2">Title</label>
+                      <label className="block text-gray-700 mb-2">Title</label>
                       <input
                         type="text"
-                        className="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/20 text-white"
+                        className="w-full px-4 py-2 rounded-lg bg-white border border-gray-300 text-gray-800"
                         value={newContent.title}
                         onChange={(e) => setNewContent({...newContent, title: e.target.value})}
                       />
                     </div>
                     <div>
-                      <label className="block text-white mb-2">Description</label>
+                      <label className="block text-gray-700 mb-2">Description</label>
                       <textarea
                         rows={4}
-                        className="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/20 text-white"
+                        className="w-full px-4 py-2 rounded-lg bg-white border border-gray-300 text-gray-800"
                         value={newContent.description}
                         onChange={(e) => setNewContent({...newContent, description: e.target.value})}
                       />
                     </div>
                     <div>
-                      <label className="block text-white mb-2">Type</label>
+                      <label className="block text-gray-700 mb-2">Type</label>
                       <select
-                        className="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/20 text-white"
+                        className="w-full px-4 py-2 rounded-lg bg-white border border-gray-300 text-gray-800"
                         value={newContent.type}
                         onChange={(e) => setNewContent({
                           ...newContent,
@@ -268,35 +268,35 @@ export default function AdminDashboard() {
                 </div>
               )}
 
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+              <div className="bg-gray-100 rounded-2xl p-8">
                 <div className="space-y-6">
                   {contents.map(content => (
-                    <div key={content.id} className="flex items-center justify-between p-4 bg-white/5 rounded-lg">
+                    <div key={content.id} className="flex items-center justify-between p-4 bg-white rounded-lg">
                       <div>
-                        <h3 className="text-xl font-semibold text-white">{content.title}</h3>
-                        <p className="text-white/80">{content.description}</p>
+                        <h3 className="text-xl font-semibold text-gray-800">{content.title}</h3>
+                        <p className="text-gray-600">{content.description}</p>
                         <div className="flex space-x-4 mt-2">
-                          <span className="text-sm text-white/60">{content.type}</span>
-                          <span className="text-sm text-white/60">
+                          <span className="text-sm text-gray-500">{content.type}</span>
+                          <span className="text-sm text-gray-500">
                             {new Date(content.createdAt).toLocaleDateString()}
                           </span>
                         </div>
                       </div>
                       <div className="flex space-x-2">
-                        <button className="p-2 hover:bg-white/10 rounded-full">
-                          <IconEdit className="text-white" size={20} />
+                        <button className="p-2 hover:bg-gray-100 rounded-full">
+                          <IconEdit className="text-gray-600" size={20} />
                         </button>
                         <button 
                           onClick={() => handleDeleteContent(content.id)}
-                          className="p-2 hover:bg-white/10 rounded-full"
+                          className="p-2 hover:bg-gray-100 rounded-full"
                         >
-                          <IconTrash className="text-white" size={20} />
+                          <IconTrash className="text-gray-600" size={20} />
                         </button>
                       </div>
                     </div>
                   ))}
                   {contents.length === 0 && (
-                    <div className="text-center text-white/60 py-8">
+                    <div className="text-center text-gray-500 py-8">
                       {"No content items yet. Click \"Add New Content\" to get started."}
                     </div>
                   )}
@@ -309,7 +309,7 @@ export default function AdminDashboard() {
           {activeTab === 'users' && (
             <>
               <div className="flex justify-between items-center mb-8">
-                <h1 className="text-3xl font-bold text-white">User Management</h1>
+                <h1 className="text-3xl font-bold text-gray-800">User Management</h1>
                 <button
                   onClick={() => setIsAddingUser(true)}
                   className="bg-[#B790CF] hover:bg-[#9A7AAD] text-white px-4 py-2 rounded-lg flex items-center"
@@ -320,31 +320,31 @@ export default function AdminDashboard() {
               </div>
 
               {isAddingUser && (
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8">
-                  <h2 className="text-2xl font-bold text-white mb-6">Add New User</h2>
+                <div className="bg-gray-100 rounded-2xl p-8 mb-8">
+                  <h2 className="text-2xl font-bold text-gray-800 mb-6">Add New User</h2>
                   <form onSubmit={handleAddUser} className="space-y-6">
                     <div>
-                      <label className="block text-white mb-2">Username</label>
+                      <label className="block text-gray-700 mb-2">Username</label>
                       <input
                         type="text"
-                        className="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/20 text-white"
+                        className="w-full px-4 py-2 rounded-lg bg-white border border-gray-300 text-gray-800"
                         value={newUser.username}
                         onChange={(e) => setNewUser({...newUser, username: e.target.value})}
                       />
                     </div>
                     <div>
-                      <label className="block text-white mb-2">Password</label>
+                      <label className="block text-gray-700 mb-2">Password</label>
                       <input
                         type="password"
-                        className="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/20 text-white"
+                        className="w-full px-4 py-2 rounded-lg bg-white border border-gray-300 text-gray-800"
                         value={newUser.password}
                         onChange={(e) => setNewUser({...newUser, password: e.target.value})}
                       />
                     </div>
                     <div>
-                      <label className="block text-white mb-2">Role</label>
+                      <label className="block text-gray-700 mb-2">Role</label>
                       <select
-                        className="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/20 text-white"
+                        className="w-full px-4 py-2 rounded-lg bg-white border border-gray-300 text-gray-800"
                         value={newUser.role}
                         onChange={(e) => setNewUser({
                           ...newUser,
@@ -374,34 +374,34 @@ export default function AdminDashboard() {
                 </div>
               )}
 
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+              <div className="bg-gray-100 rounded-2xl p-8">
                 <div className="space-y-6">
                   {users.map(user => (
-                    <div key={user.id} className="flex items-center justify-between p-4 bg-white/5 rounded-lg">
+                    <div key={user.id} className="flex items-center justify-between p-4 bg-white rounded-lg">
                       <div>
-                        <h3 className="text-xl font-semibold text-white">{user.username}</h3>
+                        <h3 className="text-xl font-semibold text-gray-800">{user.username}</h3>
                         <div className="flex space-x-4 mt-2">
-                          <span className="text-sm text-white/60">{user.role}</span>
-                          <span className="text-sm text-white/60">
+                          <span className="text-sm text-gray-500">{user.role}</span>
+                          <span className="text-sm text-gray-500">
                             {new Date(user.createdAt).toLocaleDateString()}
                           </span>
                         </div>
                       </div>
                       <div className="flex space-x-2">
-                        <button className="p-2 hover:bg-white/10 rounded-full">
-                          <IconEdit className="text-white" size={20} />
+                        <button className="p-2 hover:bg-gray-100 rounded-full">
+                          <IconEdit className="text-gray-600" size={20} />
                         </button>
                         <button 
                           onClick={() => setUsers(users.filter(u => u.id !== user.id))}
-                          className="p-2 hover:bg-white/10 rounded-full"
+                          className="p-2 hover:bg-gray-100 rounded-full"
                         >
-                          <IconTrash className="text-white" size={20} />
+                          <IconTrash className="text-gray-600" size={20} />
                         </button>
                       </div>
                     </div>
                   ))}
                   {users.length === 0 && (
-                    <div className="text-center text-white/60 py-8">
+                    <div className="text-center text-gray-500 py-8">
                       {'No users yet. Click "Add New User" to get started.'}
                     </div>
                   )}
@@ -412,22 +412,22 @@ export default function AdminDashboard() {
 
           {/* Settings Tab */}
           {activeTab === 'settings' && (
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-              <h2 className="text-2xl font-bold text-white mb-6">Settings</h2>
+            <div className="bg-gray-100 rounded-2xl p-8">
+              <h2 className="text-2xl font-bold text-gray-800 mb-6">Settings</h2>
               <div className="space-y-6">
                 <div>
-                  <label className="block text-white mb-2">Site Title</label>
+                  <label className="block text-gray-700 mb-2">Site Title</label>
                   <input
                     type="text"
-                    className="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/20 text-white"
+                    className="w-full px-4 py-2 rounded-lg bg-white border border-gray-300 text-gray-800"
                     placeholder="Nyayo"
                   />
                 </div>
                 <div>
-                  <label className="block text-white mb-2">Site Description</label>
+                  <label className="block text-gray-700 mb-2">Site Description</label>
                   <textarea
                     rows={4}
-                    className="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/20 text-white"
+                    className="w-full px-4 py-2 rounded-lg bg-white border border-gray-300 text-gray-800"
                     placeholder="Empowering women and girls in Tanzania..."
                   />
                 </div>
