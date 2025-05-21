@@ -36,6 +36,7 @@ export default function Programs() {
                 <p className="text-gray-700">
                   Through Nyayo&apos;s education program
                 </p>
+                <h3 className="text-xl font-semibold text-[#B790CF] mb-2">Sarah&apos;s Journey</h3>
                 <ul className="text-gray-700 mb-6 space-y-2">
                   <li>• Scholarships for secondary and higher education</li>
                   <li>• After-school tutoring and support</li>

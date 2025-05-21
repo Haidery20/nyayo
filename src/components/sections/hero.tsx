@@ -71,6 +71,9 @@ export function Hero({ content }: HeroProps) {
               <p className="text-gray-700">
                 &quot;Through Nyayo&apos;s education program&quot;
               </p>
+              <p className="text-gray-700">
+                &quot;I found my voice through Nyayo&apos;s advocacy program and now help other women in my community.&quot;
+              </p>
             </div>
 
             <div className="bg-gray-50 rounded-2xl p-8 shadow-lg">
@@ -164,6 +167,9 @@ export function Hero({ content }: HeroProps) {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-[#B790CF] mb-2">Grace's Story</h3>
+                <p className="text-gray-700">
+                  &quot;Through Nyayo&apos;s education program&quot;
+                </p>
                 <p className="text-gray-700">
                   &quot;I found my voice through Nyayo&apos;s advocacy program and now help other women in my community.&quot;
                 </p>

@@ -11,5 +11,7 @@ interface HeroSection {
 
 export interface HomePageContent {
   heroSection: HeroSection;
-  // Add other sections as needed
 }
+
+export type { HeroSection };
+// Add other sections as needed

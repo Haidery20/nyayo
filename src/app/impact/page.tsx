@@ -181,6 +181,10 @@ export default function Impact() {
                   Working to eliminate gender-based violence and promote women's rights.
                 </p>
                 <p className="text-gray-700">
+                  Through Nyayo&apos;s entrepreneurship program
+                </p>
+                <h3 className="text-2xl font-semibold text-[#B790CF]">Maria&apos;s Journey</h3>
+                <p className="text-gray-700">
                   Let&apos;s make a difference together
                 </p>
               </div>
