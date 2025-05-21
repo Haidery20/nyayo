@@ -96,23 +96,23 @@ export default function AdminDashboard() {
         <Header />
         <main className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-md mx-auto">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-              <h2 className="text-2xl font-bold text-white mb-6">Admin Login</h2>
+            <div className="bg-white rounded-2xl p-8">
+              <h2 className="text-2xl font-bold text-[#2F4160] mb-6">Admin Login</h2>
               <form onSubmit={handleLogin} className="space-y-6">
                 <div>
-                  <label className="block text-white mb-2">Username</label>
+                  <label className="block text-[#2F4160] mb-2">Username</label>
                   <input
                     type="text"
-                    className="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/20 text-black"
+                    className="w-full px-4 py-2 rounded-lg bg-white border border-gray-300 text-black"
                     value={loginForm.username}
                     onChange={(e) => setLoginForm({...loginForm, username: e.target.value})}
                   />
                 </div>
                 <div>
-                  <label className="block text-white mb-2">Password</label>
+                  <label className="block text-[#2F4160] mb-2">Password</label>
                   <input
                     type="password"
-                    className="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/20 text-white"
+                    className="w-full px-4 py-2 rounded-lg bg-white border border-gray-300 text-black"
                     value={loginForm.password}
                     onChange={(e) => setLoginForm({...loginForm, password: e.target.value})}
                   />
