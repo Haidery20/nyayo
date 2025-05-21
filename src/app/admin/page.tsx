@@ -92,11 +92,11 @@ export default function AdminDashboard() {
 
   if (!isAuthenticated) {
     return (
-      <div className="bg-gradient-to-b from-[#B790CF] via-[#9A7AAD] to-[#7D648B] min-h-screen">
+      <div className="min-h-screen bg-white">
         <Header />
         <main className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-md mx-auto">
-            <div className="bg-white rounded-2xl p-8">
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h2 className="text-2xl font-bold text-[#2F4160] mb-6">Admin Login</h2>
               <form onSubmit={handleLogin} className="space-y-6">
                 <div>
@@ -133,13 +133,13 @@ export default function AdminDashboard() {
   }
 
   return (
-    <div className="bg-gradient-to-b from-[#B790CF] via-[#9A7AAD] to-[#7D648B] min-h-screen">
+    <div className="min-h-screen bg-white">
       <Header />
       
       <main className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Admin Navigation */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 mb-8">
+          <div className="bg-gray-100 rounded-2xl p-4 mb-8">
             <nav className="flex space-x-4">
               <button
                 onClick={() => setActiveTab('dashboard')}
