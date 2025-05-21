@@ -297,7 +297,7 @@ export default function AdminDashboard() {
                   ))}
                   {contents.length === 0 && (
                     <div className="text-center text-white/60 py-8">
-                      No content items yet. Click "Add New Content" to get started.
+                      {"No content items yet. Click \"Add New Content\" to get started."}
                     </div>
                   )}
                 </div>
@@ -402,7 +402,7 @@ export default function AdminDashboard() {
                   ))}
                   {users.length === 0 && (
                     <div className="text-center text-white/60 py-8">
-                      No users yet. Click "Add New User" to get started.
+                      {'No users yet. Click "Add New User" to get started.'}
                     </div>
                   )}
                 </div>

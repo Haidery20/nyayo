@@ -135,9 +135,9 @@ export function Hero({ content }: HeroProps) {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#B790CF] mb-2">Sarah's Journey</h3>
+                <h3 className="text-xl font-semibold text-[#B790CF] mb-2">{"Sarah's Journey"}</h3>
                 <p className="text-gray-700">
-                  "Through Nyayo's education program, I was able to complete my studies and now run my own business."
+                  {"\"Through Nyayo's education program, I was able to complete my studies and now run my own business.\""}
                 </p>
               </div>
             </div>
@@ -152,7 +152,7 @@ export function Hero({ content }: HeroProps) {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#B790CF] mb-2">Maria's Success</h3>
+                <h3 className="text-xl font-semibold text-[#B790CF] mb-2">{"Maria's Success"}</h3>
                 <p className="text-gray-700">
                   &quot;The entrepreneurship training&quot;
                 </p>
@@ -169,7 +169,7 @@ export function Hero({ content }: HeroProps) {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#B790CF] mb-2">Grace's Story</h3>
+                <h3 className="text-xl font-semibold text-[#B790CF] mb-2">{"Grace's Story"}</h3>
                 <p className="text-gray-700">
                   Through Nyayo&apos;s education program
                 </p>

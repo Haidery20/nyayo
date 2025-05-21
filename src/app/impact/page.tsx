@@ -125,7 +125,7 @@ export default function Impact() {
                     />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-semibold text-[#B790CF]">Maria's Journey</h3>
+                    <h3 className="text-2xl font-semibold text-[#B790CF]">{"Maria's Journey"}</h3>
                     <p className="text-[#9A7AAD]">Small Business Owner</p>
                   </div>
                 </div>
@@ -146,7 +146,7 @@ export default function Impact() {
                     />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-semibold text-[#B790CF]">Grace's Story</h3>
+                    <h3 className="text-2xl font-semibold text-[#B790CF]">{"Grace's Story"}</h3>
                     <p className="text-[#9A7AAD]">Education Graduate</p>
                   </div>
                 </div>
@@ -178,7 +178,7 @@ export default function Impact() {
               <div className="bg-white-100 shadow-lg rounded-2xl p-8 text-center">
                 <h3 className="text-2xl font-semibold text-[#B790CF] mb-4">Advocacy</h3>
                 <p className="text-gray-700">
-                  Working to eliminate gender-based violence and promote women's rights.
+                  {"Working to eliminate gender-based violence and promote women's rights."}
                 </p>
                 <p className="text-gray-700">
                   Through Nyayo&apos;s entrepreneurship program

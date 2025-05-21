@@ -89,13 +89,13 @@ export default function Programs() {
               <div className="p-8">
                 <h2 className="text-3xl font-bold text-[#B790CF] mb-4">Advocacy Program</h2>
                 <p className="text-gray-700 mb-6">
-                  Our advocacy work focuses on promoting gender equality and women's rights at community and policy levels.
+                  {"Our advocacy work focuses on promoting gender equality and women's rights at community and policy levels."}
                 </p>
                 <ul className="text-gray-700 mb-6 space-y-2">
                   <li>• Community awareness campaigns</li>
                   <li>• Policy advocacy initiatives</li>
                   <li>• Gender-based violence prevention</li>
-                  <li>• Women's rights education</li>
+                  <li>• {"Women's rights educatio"}n</li>
                 </ul>
                 <a href="/programs/advocacy" className="text-[#B790CF] hover:text-[#9A7AAD] font-semibold flex items-center">
                   Learn More →
