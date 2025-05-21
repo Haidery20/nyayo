@@ -1,6 +1,7 @@
 'use client';
 
-import { motion, useMotionTemplate, useSpring } from 'framer-motion';
+import { motion, useAnimation, useInView } from 'framer-motion';
+import { useEffect, useRef } from 'react';
 import { MouseEvent } from 'react';
 
 interface AnimatedCardProps {

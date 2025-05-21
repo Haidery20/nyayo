@@ -165,7 +165,7 @@ export function Hero({ content }: HeroProps) {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-[#B790CF] mb-2">Grace's Story</h3>
                 <p className="text-gray-700">
-                  "I found my voice through Nyayo's advocacy program and now help other women in my community."
+                  &quot;I found my voice through Nyayo&apos;s advocacy program and now help other women in my community.&quot;
                 </p>
               </div>
             </div>
