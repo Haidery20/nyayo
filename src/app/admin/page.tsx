@@ -144,7 +144,7 @@ export default function AdminDashboard() {
               <button
                 onClick={() => setActiveTab('dashboard')}
                 className={`flex items-center px-4 py-2 rounded-lg ${
-                  activeTab === 'dashboard' ? 'bg-white/20 text-white' : 'text-white/80 hover:bg-white/10'
+                  activeTab === 'dashboard' ? 'bg-[#B790CF] text-white' : 'text-gray-700 hover:bg-[#B790CF]/10'
                 }`}
               >
                 <IconDashboard className="mr-2" size={20} />
@@ -183,17 +183,17 @@ export default function AdminDashboard() {
           {/* Dashboard Tab */}
           {activeTab === 'dashboard' && (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-                <h3 className="text-xl font-semibold text-white mb-2">Total Content</h3>
-                <p className="text-3xl font-bold text-white">{contents.length}</p>
+              <div className="bg-gray-100 rounded-2xl p-8">
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">Total Content</h3>
+                <p className="text-3xl font-bold text-[#B790CF]">{contents.length}</p>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-                <h3 className="text-xl font-semibold text-white mb-2">Total Users</h3>
-                <p className="text-3xl font-bold text-white">{users.length}</p>
+              <div className="bg-gray-100 rounded-2xl p-8">
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">Total Users</h3>
+                <p className="text-3xl font-bold text-[#B790CF]">{users.length}</p>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-                <h3 className="text-xl font-semibold text-white mb-2">Recent Activity</h3>
-                <p className="text-white/80">Last login: {new Date().toLocaleDateString()}</p>
+              <div className="bg-gray-100 rounded-2xl p-8">
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">Recent Activity</h3>
+                <p className="text-gray-600">Last login: {new Date().toLocaleDateString()}</p>
               </div>
             </div>
           )}
