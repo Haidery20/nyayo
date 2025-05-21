@@ -9,8 +9,11 @@ const strapiClient = axios.create({
 
 export async function getContent(contentType: string) {
   try {
-    const response = await strapiClient.get(`/api/${contentType}`);
-    return response.data;
+    // Add query parameter to populate all related fields
+    const response = await strapiClient.get(`/${contentType}?populate=*`);
+    
+    // Strapi v4 returns data in a nested structure
+    return response.data.data?.attributes || null;
   } catch (error) {
     console.error('Error fetching content from Strapi:', error);
     return null;

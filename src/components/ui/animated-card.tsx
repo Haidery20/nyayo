@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, useAnimation, useInView } from 'framer-motion';
+import { motion, useSpring, useMotionTemplate } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import { MouseEvent } from 'react';
 
