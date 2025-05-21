@@ -69,7 +69,7 @@ export function Hero({ content }: HeroProps) {
             <div className="bg-gray-50 rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-semibold text-[#B790CF] mb-4">Foster Entrepreneurship</h3>
               <p className="text-gray-700">
-                Through business training, micro-loans, and ongoing support, we help women establish and grow successful businesses, promoting economic independence.
+                &quot;Through Nyayo&apos;s education program&quot;
               </p>
             </div>
 
@@ -148,7 +148,7 @@ export function Hero({ content }: HeroProps) {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-[#B790CF] mb-2">Maria's Success</h3>
                 <p className="text-gray-700">
-                  "The entrepreneurship training gave me the skills and confidence to start my own shop."
+                  &quot;The entrepreneurship training&quot;
                 </p>
               </div>
             </div>

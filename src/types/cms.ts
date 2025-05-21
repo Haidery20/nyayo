@@ -9,7 +9,7 @@ interface HeroSection {
   };
 }
 
-interface HomePageContent {
+export interface HomePageContent {
   heroSection: HeroSection;
   // Add other sections as needed
 }

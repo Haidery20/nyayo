@@ -55,7 +55,7 @@ export default function Contact() {
               <p className="text-gray-700">
                 info@nyayo.or.tz<br />
                 For general inquiries<br />
-                We'll respond within 24 hours
+                We&apos;ll respond within 24 hours
               </p>
             </div>
           </div>

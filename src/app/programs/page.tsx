@@ -33,8 +33,8 @@ export default function Programs() {
               </div>
               <div className="p-8">
                 <h2 className="text-3xl font-bold text-[#B790CF] mb-4">Education Program</h2>
-                <p className="text-gray-700 mb-6">
-                  Our education program provides access to quality education, mentorship, and resources for girls to achieve their academic goals.
+                <p className="text-gray-700">
+                  Through Nyayo&apos;s education program
                 </p>
                 <ul className="text-gray-700 mb-6 space-y-2">
                   <li>• Scholarships for secondary and higher education</li>

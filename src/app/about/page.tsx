@@ -92,7 +92,7 @@ export default function About() {
                 <h3 className="text-2xl font-semibold text-[#B790CF] mb-2">Mary Daniel</h3>
                 <p className="text-[#9A7AAD] mb-4">Executive Director</p>
                 <p className="text-gray-700">
-                  With over 15 years of experience in community development and women's empowerment programs.
+                  With over 15 years of experience in community development and women&apos;s empowerment programs.
                 </p>
               </div>
 

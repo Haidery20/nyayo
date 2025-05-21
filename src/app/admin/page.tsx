@@ -2,7 +2,7 @@
 
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { IconEdit, IconTrash, IconPlus, IconUsers, IconDashboard, IconSettings } from '@tabler/icons-react';
 
 interface ContentItem {
